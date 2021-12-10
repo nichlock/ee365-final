@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-//Date        : Fri Dec 10 13:10:23 2021
+//Date        : Fri Dec 10 15:08:00 2021
 //Host        : DESKTOP-STEELE running 64-bit major release  (build 9200)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -10,7 +10,8 @@
 `timescale 1 ps / 1 ps
 
 module design_1_wrapper
-   (DDR_addr,
+   (BTN,
+    DDR_addr,
     DDR_ba,
     DDR_cas_n,
     DDR_ck_n,
@@ -35,6 +36,7 @@ module design_1_wrapper
     PWM1,
     PWM2,
     PWM3);
+  input [3:0]BTN;
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
   inout DDR_cas_n;
@@ -61,6 +63,7 @@ module design_1_wrapper
   output PWM2;
   output PWM3;
 
+  wire [3:0]BTN;
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
   wire DDR_cas_n;
@@ -88,7 +91,8 @@ module design_1_wrapper
   wire PWM3;
 
   design_1 design_1_i
-       (.DDR_addr(DDR_addr),
+       (.BTN(BTN),
+        .DDR_addr(DDR_addr),
         .DDR_ba(DDR_ba),
         .DDR_cas_n(DDR_cas_n),
         .DDR_ck_n(DDR_ck_n),

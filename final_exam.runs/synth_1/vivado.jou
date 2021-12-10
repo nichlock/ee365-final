@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri Dec 10 13:14:11 2021
-# Process ID: 34992
+# Start of session at: Fri Dec 10 17:29:25 2021
+# Process ID: 4596
 # Current directory: S:/Courses/EE365/FE/final_exam.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: S:/Courses/EE365/FE/final_exam.runs/synth_1/design_1_wrapper.vds
