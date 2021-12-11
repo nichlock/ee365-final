@@ -220,3 +220,6 @@ refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z007s_1] 0]
 INFO: [Labtools 27-1434] Device xc7z007s (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
 file copy -force S:/Courses/EE365/FE/final_exam.runs/impl_1/design_1_wrapper.sysdef S:/Courses/EE365/FE/final_exam.sdk/design_1_wrapper.hdf
 
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210370AFD0F1A
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 10 22:41:00 2021...

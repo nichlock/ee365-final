@@ -29,9 +29,9 @@ int main(){
         else
              num++;
 
-        if((XGpio_DiscreteRead(&gpio, 1) & 0x1)) // Read button state
-        	Xil_Out32(MY_PWM, PWM_25);           // Write a constant to PWM0
-        else Xil_Out32(MY_PWM, num);             // Write num to PWM 0
+        if((XGpio_DiscreteRead(&gpio, 1) & 0x1))
+        	Xil_Out32(MY_PWM, PWM_25);
+        else Xil_Out32(MY_PWM, num);
 
         if((XGpio_DiscreteRead(&gpio, 1) & 0x2))
         	Xil_Out32(MY_PWM+4, PWM_50);
